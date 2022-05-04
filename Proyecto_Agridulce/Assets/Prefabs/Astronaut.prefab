@@ -71,6 +71,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6334645007941520152}
   - component: {fileID: 6334645007941520153}
+  - component: {fileID: 1418910753}
   m_Layer: 0
   m_Name: Armature
   m_TagString: Untagged
@@ -162,6 +163,22 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.000008470961, y: 0.0011934831, z: -0.0002259718}
     m_Extent: {x: 0.0022412618, y: 0.0028217828, z: 0.001599066}
   m_DirtyAABB: 0
+--- !u!54 &1418910753
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6334645007941520155}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &6334645008198190094
 GameObject:
   m_ObjectHideFlags: 0
@@ -877,6 +894,7 @@ GameObject:
   - component: {fileID: 6334645009764557645}
   - component: {fileID: 6334645009764557644}
   - component: {fileID: 6334645009764557647}
+  - component: {fileID: 2030878546}
   m_Layer: 0
   m_Name: Astronaut
   m_TagString: Untagged
@@ -946,10 +964,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clampingMagnitude: 10
+  _timerSwipe: 1
   rails:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+--- !u!65 &2030878546
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6334645009764557633}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 0.10153761, y: 0.24048615, z: 0.06574374}
+  m_Center: {x: 0.00065503124, y: 0.053407457, z: 0.0001673937}
 --- !u!1 &6334645009774783553
 GameObject:
   m_ObjectHideFlags: 0

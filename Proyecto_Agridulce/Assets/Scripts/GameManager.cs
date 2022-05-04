@@ -1,20 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] float score;
+    private float _currentScore;
+    [SerializeField] float _scorePointsPerSecond;
+    [SerializeField] TextMeshPro scoreTextUI;
 
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        _currentScore += _scorePointsPerSecond * Time.deltaTime;
     }
 }

@@ -30,6 +30,11 @@ public class RailsChanger : SwipeVTwo
         {
             dirNumeric = -1;
         }
+        /*else if(dir.y > 0)
+        {
+            //Salta el personaje
+        }*/
+
         ChangeRail(dirNumeric);
     }
 
