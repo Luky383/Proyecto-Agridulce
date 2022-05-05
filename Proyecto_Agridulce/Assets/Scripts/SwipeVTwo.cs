@@ -19,7 +19,7 @@ public abstract class SwipeVTwo : MonoBehaviour
     void Update()
     {
         _currentTime -= Time.deltaTime;
-        Debug.Log(_currentTime);
+        //Debug.Log(_currentTime);
 
         if (Input.touchCount > 0 && _currentTime < 0)
         {
