@@ -28,6 +28,7 @@ public abstract class SwipeVTwo : MonoBehaviour
             if (touchOne.deltaPosition.magnitude < clampingMagnitude) return;
 
             GetSwipeDir(touchOne.deltaPosition);
+            
             ResetTimerSwipe();       
         }
 
@@ -40,6 +41,7 @@ public abstract class SwipeVTwo : MonoBehaviour
             if (dirMouse.magnitude < clampingMagnitude) return;
 
             GetSwipeDir(dirMouse);
+            
             ResetTimerSwipe();
         }
     }
