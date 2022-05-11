@@ -6,17 +6,27 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    private float _currentScore;
-    [SerializeField] float _scorePointsPerSecond;
-    [SerializeField] TextMeshPro scoreTextUI;
-
-    void Start()
-    {
-        
-    }
+    [Header("Score Values")]
+    [SerializeField] float _scorePerSecond;
+    [SerializeField] float _scorePointsTime;
+    [SerializeField] TextMeshProUGUI scoreTextUI;
+    private float _score;
+    float _timeToAddScore;
 
     void Update()
     {
-        _currentScore += _scorePointsPerSecond * Time.deltaTime;
+
+        if (Time.time > _timeToAddScore)
+        {
+            AddScore(_scorePerSecond);
+            _timeToAddScore = Time.time + _scorePointsTime;
+        }
+        scoreTextUI.SetText(_score.ToString());
+
+    }
+
+    void AddScore(float moneyIndex)
+    {
+        _score += moneyIndex;
     }
 }
