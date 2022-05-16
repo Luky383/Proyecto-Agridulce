@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(Rigidbody), typeof(Animator))]
 public class Player : MonoBehaviour 
 {
 	private Animator _anim;
@@ -29,7 +29,6 @@ public class Player : MonoBehaviour
 		}  else {
 			_anim.SetInteger ("AnimationPar", 0);
 		}*/
-
 		PermaRunning();
 	}
 
