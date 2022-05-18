@@ -13,6 +13,11 @@ public class GameManager : MonoBehaviour
     private float _score;
     float _timeToAddScore;
 
+    private void Start()
+    {
+        
+    }
+
     void Update()
     {
 
