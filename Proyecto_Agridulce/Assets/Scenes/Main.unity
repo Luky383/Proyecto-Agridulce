@@ -853,7 +853,7 @@ GameObject:
   - component: {fileID: 1447325140}
   - component: {fileID: 1447325141}
   m_Layer: 0
-  m_Name: InvisibleEye
+  m_Name: GeneralManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -885,8 +885,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07a2d3a3d6d360e43b6935a68e0173c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scorePerSecond: 2
-  _scorePointsTime: 0.2
+  _scorePassivePoints: 2
+  _timerToAddScorePoints: 0.2
   scoreTextUI: {fileID: 25370796}
 --- !u!4 &1451360325 stripped
 Transform:
