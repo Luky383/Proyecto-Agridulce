@@ -1,17 +1,17 @@
 fileFormatVersion: 2
-guid: 1a33406d08a991642bb8bcd36bca7ee7
+guid: c42d45b889ffc8448ace22b7fcee07f2
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
       74: 1827226128182048838
-    second: JumpLoop
+    second: DonutStartJump
   - first:
-      74: -8584443767568199293
-    second: StartJump
+      74: 3286831599718355815
+    second: DonutJumpLoop
   - first:
-      74: 8324654356728483127
-    second: JumpEnd
+      74: -8667273545741751827
+    second: DonutJumpEnd
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -41,36 +41,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: JumpLoop
-      takeName: Take 001
-      internalID: 0
-      firstFrame: 15
-      lastFrame: 25
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 1
-    - serializedVersion: 16
-      name: StartJump
+      name: DonutStartJump
       takeName: Take 001
       internalID: 0
       firstFrame: 1
@@ -99,7 +70,36 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 1
     - serializedVersion: 16
-      name: JumpEnd
+      name: DonutJumpLoop
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 15
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: DonutJumpEnd
       takeName: Take 001
       internalID: 0
       firstFrame: 26
