@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
 	[SerializeField]
 	private float speed;
 
+	private bool isGrounded;
+
 	Rigidbody _myRigidBody;
 	ForceMode _myForceMode = ForceMode.Impulse;
 	[SerializeField]
@@ -32,6 +34,8 @@ public class Player : MonoBehaviour
 		PermaRunning();
 	}
 
+
+
 	void PermaRunning()
 	{
 		transform.position += transform.forward * speed * Time.deltaTime;
@@ -39,6 +43,16 @@ public class Player : MonoBehaviour
 
 	public void Jump() //Jump que esté separado del railschanger
 	{
-		_myRigidBody.AddForce(Vector3.up * _jumpForce, _myForceMode);
+		if (isGrounded) //Le puso la restriccion asi no puede saltar seguido hasta el infinito
+		{
+			_myRigidBody.AddForce(Vector3.up * _jumpForce, _myForceMode);
+			isGrounded = !isGrounded;
+		}
 	}
+
+    private void OnTriggerEnter(Collider other)
+    {
+		isGrounded = true;
+    }
+
 }
