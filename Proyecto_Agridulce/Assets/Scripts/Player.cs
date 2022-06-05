@@ -2,9 +2,10 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-[RequireComponent(typeof(Rigidbody), typeof(Animator))]
+[RequireComponent(typeof(Rigidbody))]
 public class Player : MonoBehaviour 
 {
+	[SerializeField]
 	private Animator _anim;
 	[SerializeField]
 	private float speed;
@@ -47,12 +48,14 @@ public class Player : MonoBehaviour
 		{
 			_myRigidBody.AddForce(Vector3.up * _jumpForce, _myForceMode);
 			isGrounded = !isGrounded;
+			_anim.SetBool("isGrounded", false);
 		}
 	}
 
     private void OnTriggerEnter(Collider other)
     {
 		isGrounded = true;
-    }
+		_anim.SetBool("isGrounded", true);
+	}
 
 }
